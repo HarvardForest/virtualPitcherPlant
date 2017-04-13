@@ -16,6 +16,8 @@ pageWithSidebar(
                      min = 0, max = 100, step = 1), 
         numericInput('nfeeds', 'Number of Feedings', 2,
                      min = 0, max = 10, step = 1),
+        selectInput('decyc', 'Decycle', 
+                    c('TRUE','FALSE'),selected = 'FALSE')
         numericInput('lag', 'Phase Plot Lag', 
                      10, min = 1, max = 1440, 
                      step = 10),
@@ -36,9 +38,7 @@ pageWithSidebar(
                      step = 1),
         numericInput('feedingTime', 'Feeding Time!', 
                      720, min = 1, max = 1440, 
-                     step = 1),
-        selectInput('decyc', 'Decycle', 
-                    c('TRUE','FALSE'),selected = 'FALSE')
+                     step = 1)
         ),
     mainPanel(
         plotOutput('plot1')
