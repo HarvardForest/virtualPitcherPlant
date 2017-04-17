@@ -44,8 +44,16 @@ function(input, output, session) {
     lagplot(runSim()[,plot.var()],
             k =input$lag,type = 'p',
             col = rainbow(input$days*1440,end = 0.8),
-            xlab = '',ylab = '',
+            xlab = paste(plot.var(),'t'),ylab = paste(plot.var(),paste('t +',input$lag)),
             cex = 2)
+  })
+
+  output$plot3 <- renderPlot({
+      par(mar = c(5.1, 4.1, 0, 1))
+      plot(runSim()[,c('Food Amount',plot.var())],
+           type = 'p',cex = 2,pch = 19,
+           col = rainbow(input$days*1440,end = 0.8),
+           xlab = 'Prey',ylab = plot.var())
   })
 
 }

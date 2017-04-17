@@ -1,7 +1,7 @@
 pageWithSidebar(
     headerPanel('Sarracenia Pitcher Plant Simulator'),
     sidebarPanel(
-        selectInput('var', 'View:', 
+        selectInput('var', 'Pitcher Variable', 
                     c("Oxygen",
                       "Photosynthesis",
                       "Biological Oxygen Demand",
@@ -44,5 +44,7 @@ pageWithSidebar(
         plotOutput('plot1')
        ,
         plotOutput('plot2')
+       ,
+        plotOutput('plot3')
         )
     )
