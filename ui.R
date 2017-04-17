@@ -17,7 +17,7 @@ pageWithSidebar(
         numericInput('nfeeds', 'Number of Feedings', 2,
                      min = 0, max = 10, step = 1),
         selectInput('decyc', 'Decycle', 
-                    c('TRUE','FALSE'),selected = 'FALSE')
+                    c('TRUE','FALSE'),selected = 'FALSE'),
         numericInput('lag', 'Phase Plot Lag', 
                      10, min = 1, max = 1440, 
                      step = 10),
