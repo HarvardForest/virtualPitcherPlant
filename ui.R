@@ -10,11 +10,11 @@ pageWithSidebar(
                       "Augmentation Value",
                       "Control"
                       ),selected = 'Oxygen'),
-        numericInput('days', 'Simlation Length (Days)', 5,
+        numericInput('days', 'Simlation Length (Days)', 10,
                      min = 1, max = 10),
         numericInput('foodWeight', 'Prey (mg/mL)', 5,
                      min = 0, max = 100, step = 1), 
-        numericInput('nfeeds', 'Number of Feedings', 2,
+        numericInput('nfeeds', 'Number of Feedings', 5,
                      min = 0, max = 10, step = 1),
         selectInput('decyc', 'Decycle', 
                     c('TRUE','FALSE'),selected = 'FALSE'),
