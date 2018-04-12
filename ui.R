@@ -1,5 +1,5 @@
 pageWithSidebar(
-    headerPanel('Sarracenia Pitcher Plant Simulator'),
+    headerPanel('Micro-Ecosystem Simulator'),
     sidebarPanel(
         selectInput('var', 'Pitcher Variable', 
                     c("Oxygen",
